@@ -26,7 +26,7 @@ func main() {
 	// Аргументы комманды go-envdir - это путь к папке с файлами и имя комманды, которую нужно выполить
 	dirPath := sub.Arg(0)
 	cmdName := sub.Arg(1)
-	// Читаем папку path
+	// Читаем папку dirPath
 	var list envList
 	files, err := os.ReadDir(dirPath)
 	if err != nil {
